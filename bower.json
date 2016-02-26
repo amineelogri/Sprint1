@@ -1,0 +1,10 @@
+{
+  "name":"sprint1",
+   "dependencies":{
+     "bootstrap":"latest",
+     "backbone":"latest",
+     "requirejs":"latest",
+     "handlebars":"latest"
+   }
+
+}

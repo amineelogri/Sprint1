@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title></title>
+<link rel="stylesheet"
+	href="bower_components\bootstrap\dist\css\bootstrap.css" media="screen"
+	title="no title" charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="container ">
+		<div class="row">
+			<div class="col-xs-offset2 col-xs-6">
+				<div class="panel panel-primary panel-orange">
+					<div class="panel-heading panel-orange">
+						<h3 class="panel-title centerText Authentification">Authentification</h3>
+					</div>
+
+          <!--  ************************************************Début de formulaire****************************************-->
+
+
+          <form action="#hh">
+            <div name="form" class="panel-body marginFormulaire">
+               <span id="loginVide"></span>
+              <div class="form-group has-feedback">
+
+                <input type="text" class="form-control" placeholder="Login" name="login" onfocus="ViderFormulaire()" /> <i
+                  class="glyphicon glyphicon-user form-control-feedback"></i>
+
+              </div>
+              <span id="mtPasseVide"></span>
+              <div class="form-group has-feedback">
+
+                <input type="text" class="form-control" placeholder="Mot de passe" name="mtPasse" onfocus="ViderFormulaire()" /> <i
+                  class="glyphicon glyphicon-lock form-control-feedback"></i>
+
+              </div>
+               <div class="Mconnection">
+              <input type="checkbox" name="Mconnecion" value="Mconnection"> Maintenir la connexion
+               </div>
+               <div class="marginBtn">
+                     <INPUT type="button" class="btn btn-primary" name="bouton" value="Connexion" onClick="ValiderFormulaire(this.form)">
+               </div>
+               <div class="separation_gauche" >
+                <a href="#" class="Mpoublie">mot de passe oublié ?</a>
+               </div>
+
+            </div>
+          </form>
+
+
+
+          <!--  ************************************************Fin de formulaire****************************************-->
+				</div>
+			</div>
+
+       <div class="row">
+         <!-- <FORM name="form4" action="#dkdk">
+            Saisissez une adresse mail valide (du type nom@domaine.com)
+            ;<INPUT type="texte" name="mail">
+            <INPUT type="button" name="bouton" value="Valider" onClick="ValiderMail(this.form)">
+         </FORM> -->
+       </div>
+
+       <!-- <FORM name="form4" action="tt.php">
+          Saisissez une adresse mail valide (du type nom@domaine.com)<INPUT type="texte" name="mail">
+          <INPUT type="button" name="bouton" value="Valider" onClick="ValiderMail(this.form)">
+       </FORM> -->
+
+		</div>
+	</div>
+
+
+  <!-- <SCRIPT language="javascript">
+   function ValiderMail(formulaire) {
+      if (formulaire.mail.value.indexOf("@",0)<0) {alert("Adresse mail saisie invalide.\nLe formulaire ne sera pas validé.")}
+      else {
+        // alert("Formulaire validé.\nPour valider un formulaire : formulaire.submit()");
+         // Pour valider le formulaire en javascript :
+         formulaire.submit()
+      }
+   }
+</SCRIPT> -->
+<script src="js\script\Myscript.js" charset="utf-8"></script>
+  <script data-main="main" src="bower_components/requirejs/require.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+
+</html>
